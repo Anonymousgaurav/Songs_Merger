@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#95C377">
+
+        <ImageView
+            android:id="@+id/bkg"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/qq"
+            android:scaleType="fitXY" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/bkg"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="35dp"
+            app:cardCornerRadius="15dp">
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="25dp"
+                    android:text="First Audio" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="25dp"
+                    android:text="Second Audio"
+
+                    />
+
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/button1"
+                    android:padding="12dp"
+                    android:text="Select File 1" />
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/button1"
+                    android:padding="12dp"
+                    android:text="Select File 2" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Merge Songs" />
+
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_play_"
+                    android:layout_below="@id/btn"
+                    android:background="#FFFFFF"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/play1"
+                    android:layout_marginLeft="35dp"
+                    android:visibility="visible"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_play_"
+                    android:layout_below="@id/btn"
+                    android:background="#FFFFFF"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/play2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="35dp"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_stop_"
+                    android:layout_below="@id/btn"
+                    android:background="#FFFFFF"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/stop1"
+                    android:layout_marginLeft="35dp"
+                    android:visibility="invisible"
+                    />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_stop_"
+                    android:layout_below="@id/btn"
+                    android:background="#FFFFFF"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/stop2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="35dp"
+                    android:visibility="invisible"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+</layout>
